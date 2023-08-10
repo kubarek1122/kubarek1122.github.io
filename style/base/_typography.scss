@@ -5,8 +5,22 @@ h1 {
 }
 
 p,
-a {
+a,
+ul{
   font-size: $default-font-size;
+}
+
+ul li {
+  list-style: none;
+  position: relative;
+  padding: 6px 0 2px 25px;
+}
+
+ul li::before {
+  content: '-';
+  position: absolute;
+  top: 6px;
+  left: 0;
 }
 
 a {
@@ -37,7 +51,7 @@ a:hover {
   @include respond(phone) {
     margin: 0;
     background-image: none;
-    -webkit-text-fill-color: $secondary-color;
+    -webkit-text-fill-color: $white-color;
     box-shadow: none;
   }
 }

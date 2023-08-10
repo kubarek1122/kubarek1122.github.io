@@ -62,19 +62,24 @@
 <body>
 <!-- Hero Section -->
 <div id="hero">
-    <video autoplay id="showReelVideo" loop muted>
-        <source src="assets/tmpVid.mp4" type="video/mp4">
-    </video>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="assets/video/reel.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+
     <section class="container">
         <h1 class="hero-title">
-            Hi, my name is <span class="text-color-main name">Jakub Berut</span>
+            Hi, my name is <span class="name">Jakub Berut</span>
             <br/>
             I'm the Game Developer.
         </h1>
         <p class="hero-cta">
-            <a class="cta-btn cta-btn--hero" href="#about">About me</a>
+            <a class="cta-btn cta-btn--resume" href="#about">About me</a>
         </p>
     </section>
+
     <a aria-label="scroll-down" class="scroll-down-link" href="#about">
         <div class="scroll-down"></div>
     </a>
@@ -97,19 +102,26 @@
             </div>
             <div class="about-wrapper__info">
                 <p class="about-wrapper__info-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Temporibus quae repellat, ad omnis distinctio velit saepe expedita
-                    architecto cumque veritatis adipisci. Sapiente non, saepe hic
-                    adipisci doloribus quisquam recusandae et.
-                </p>
+                    Hi, my name is Jakub Berut.<br>
+                    I am:</p>
+                    <ul>
+                        <li>Game developer since 2019</li>
+                        <li>Graduate of Applied Computer Science at the Technical University of Łódź with a specialization in
+                            Game Development and Computer Simulation</li>
+                        <li>Member of the DVD Unicorns team</li>
+                        <li>Leader of the team that won the 2022 ZTGK Challenge in the Game Development category</li>
+                    </ul>
                 <p class="about-wrapper__info-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-                    obcaecati doloribus qui praesentium quae veniam esse mollitia
-                    consequuntur nisi minima quasi et fugit quidem enim recusandae
-                    delectus, iusto culpa rerum?
+                    Here you can find some of my personal projects. For professional work, take a look at my
+                    résumé or LinkedIn profile. I am a quick learner who loves to constantly explore new concepts and
+                    ideas
+                    (sometimes falling into various rabbit holes). While working with designers, I always try to look at
+                    ideas from both the technical and user sides to provide the best experience that works the best
+                    given existing systems and limitations.
                 </p>
                 <span class="about-wrapper__cta">
-              <a class="cta-btn cta-btn--resume" href="#">View Resume</a>
+              <a class="cta-btn cta-btn--resume"
+                 href="https://drive.google.com/drive/folders/1WMnKwOJfxNyaWQIQsdOYH1YOH7C8KujD?usp=sharing">View Resume</a>
             </span>
             </div>
         </div>
@@ -126,35 +138,35 @@
             <!-- Each .row is a project -->
             <article class="row">
                 <div class="project-wrapper__text">
-                    <h3 class="project-wrapper__text-title">Project Title</h3>
+                    <h3 class="project-wrapper__text-title">Bytebond</h3>
                     <p class="project-wrapper__text-info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                        necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                        sint saepe nostrum! Enim, perferendis.
+                        07.2023 - Current <br>
+                        Bytebond is an asymmetric co-op puzzle game that takes place inside the computer. Bond with your
+                        friend and become a part of the Antivirus Special Forces as you head to the heart of the PC.
+                        Solve electrifying puzzles to regain control over the infected CPU. The power conundrum awaits!
+                        Developed by the DVD Unicorns team, where I am mainly a gameplay programmer. Created in Unity.
                     </p>
                     <div class="project-wrapper__text-btns">
                         <a
                                 class="cta-btn cta-btn--hero cta-btn--projects"
-                                href="#"
+                                href="https://store.steampowered.com/app/1952690/Bytebond/"
                                 rel="noopener noreferrer"
                                 target="_blank"
-                        >See Live</a
-                        >
-                        <a class="cta-btn text-color-main" href="#" target="_blank"
-                        >Source Code</a
-                        >
+                        >Steam Page</a>
+                        <a class="cta-btn text-color-main" href="http://dvdunicorns.com/en/sheet.php?p=bytebond"
+                           target="_blank"
+                        >Website</a>
                     </div>
                 </div>
 
                 <div class="project-wrapper__image">
-                    <a href="#" rel="noopener noreferrer" target="_blank">
+                    <a href="https://youtu.be/S1viAF2yt7A" rel="noopener noreferrer" target="_blank">
                         <div class="thumbnail rounded">
                             <img
                                     alt="Project Image"
                                     class="img-fluid"
                                     height="767"
-                                    src="./assets/project.png"
+                                    src="./assets/screens/bytebond.png"
                                     width="1366"
                             />
                         </div>
@@ -166,35 +178,43 @@
             <!-- Each .row is a project -->
             <article class="row">
                 <div class="project-wrapper__text">
-                    <h3 class="project-wrapper__text-title">Project Title</h3>
+                    <h3 class="project-wrapper__text-title">Delayed</h3>
                     <p class="project-wrapper__text-info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                        necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                        sint saepe nostrum! Enim, perferendis.
+                        03.2022 – 06.2022<br>
+                        Winner of 2022 ZTGK Contest in the Game Development Category!<br>
+                        Special awards from:</p>
+                    <ul>
+                        <li>SuperHot</li>
+                        <li>Bloober Team</li>
+                        <li>Infinity Ward</li>
+                    </ul>
+                    <p class="project-wrapper__text-info">
+                        Delayed is a 3D puzzle-platformer game created with our custom game engine. Developed by a team
+                        of six (3 programmers, 2 artists, and a designer) in
+                        ~4 months. I was a team leader and one of the programmers. Created in C++ using OpenGL as the
+                        render API.
                     </p>
                     <div class="project-wrapper__text-btns">
                         <a
                                 class="cta-btn cta-btn--hero cta-btn--projects"
-                                href="#"
+                                href="https://github.com/matey-99/Delayed"
                                 rel="noopener noreferrer"
                                 target="_blank"
-                        >See Live</a
-                        >
-                        <a class="cta-btn text-color-main" href="#" target="_blank"
-                        >Source Code</a
-                        >
+                        >Source Code</a>
+                        <a class="cta-btn text-color-main"
+                           href="https://github.com/matey-99/Delayed/releases/tag/release" target="_blank"
+                        >Release</a>
                     </div>
                 </div>
 
                 <div class="project-wrapper__image">
-                    <a href="#" rel="noopener noreferrer" target="_blank">
+                    <a href="https://youtu.be/9jjdgp4lvSg" rel="noopener noreferrer" target="_blank">
                         <div class="thumbnail rounded">
                             <img
                                     alt="Project Image"
                                     class="img-fluid"
                                     height="767"
-                                    src="./assets/project.png"
+                                    src="./assets/screens/delayed.png"
                                     width="1366"
                             />
                         </div>
@@ -206,35 +226,40 @@
             <!-- Each .row is a project -->
             <article class="row">
                 <div class="project-wrapper__text">
-                    <h3 class="project-wrapper__text-title">Project Title</h3>
+                    <h3 class="project-wrapper__text-title">Slash</h3>
                     <p class="project-wrapper__text-info">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Deleniti voluptas, sit nam perspiciatis tempore aspernatur ullam
-                        necessitatibus impedit repellendus vero sed ipsa eos beatae ab
-                        sint saepe nostrum! Enim, perferendis.
-                    </p>
+                        08.2023 <br>
+                        Project created with Unreal Engine 5 C++ The Ultimate Game Developer Course. Developed solo in 2
+                        weeks to get the hang of the Unreal Engine and its differences from Unity. What I learned:</p>
+                    <ul>
+                        <li>Unreal Engine fundamentals</li>
+                        <li>Creating gameplay elements using C++ and blueprints</li>
+                        <li>Creating basic SFX and VFX</li>
+                        <li>Implementing basic enemy logic using the behavior tree</li>
+                        <li>Using animations and implementing basic IK</li>
+                        <li>In many areas, core concepts do not differ between engines</li>
+                    </ul>
                     <div class="project-wrapper__text-btns">
                         <a
                                 class="cta-btn cta-btn--hero cta-btn--projects"
-                                href="#"
+                                href="https://gitlab.com/kubarek1122/Slash"
                                 rel="noopener noreferrer"
                                 target="_blank"
-                        >See Live</a
-                        >
-                        <a class="cta-btn text-color-main" href="#" target="_blank"
-                        >Source Code</a
-                        >
+                        >Source Code</a>
+                        <a class="cta-btn text-color-main" href="http://ude.my/UC-15fb091f-2f47-422b-9d91-ab27f4268eee"
+                           target="_blank"
+                        >Certificate</a>
                     </div>
                 </div>
 
                 <div class="project-wrapper__image">
-                    <a href="#" rel="noopener noreferrer" target="_blank">
+                    <a href="https://youtu.be/qMvAuaK2vXU" rel="noopener noreferrer" target="_blank">
                         <div class="thumbnail rounded">
                             <img
                                     alt="Project Image"
                                     class="img-fluid"
                                     height="767"
-                                    src="./assets/project.png"
+                                    src="./assets/screens/slash.png"
                                     width="1366"
                             />
                         </div>
@@ -242,6 +267,159 @@
                 </div>
             </article>
             <!-- /END Project -->
+
+            <!-- Each .row is a project -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">Tilted Dungeon</h3>
+                    <p class="project-wrapper__text-info">
+                        07.2023 <br>
+                        GMTK Game Jam 2023 Entry.<br>
+                        Roles reversed, now you control the dungeon! Tilt dungeon floors to push your hero through
+                        dangerous environments!<br>
+                        Created in 48 hours by a team of 4 (2 programmers, 2 artists) in Unity. As one of the
+                        programmers among the others, I created input handling, platform tilting mechanics, and
+                        followers' behavior.
+                    </p>
+                    <div class="project-wrapper__text-btns">
+                        <a
+                                class="cta-btn cta-btn--hero cta-btn--projects"
+                                href="https://warjoyheir.itch.io/tilteddungeon"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >Itch.io Page</a>
+                    </div>
+                </div>
+
+                <div class="project-wrapper__image">
+                    <a href="https://youtu.be/aHgdEfIQAVE" rel="noopener noreferrer" target="_blank">
+                        <div class="thumbnail rounded">
+                            <img
+                                    alt="Project Image"
+                                    class="img-fluid"
+                                    height="767"
+                                    src="./assets/screens/tilted_dungeon.png"
+                                    width="1366"
+                            />
+                        </div>
+                    </a>
+                </div>
+            </article>
+            <!-- /END Project -->
+
+            <!-- Each .row is a project -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">Speeeer</h3>
+                    <p class="project-wrapper__text-info">
+                        11.2022<br>
+                        Boat in the Jam 2022 Game Jam Submission.<br>
+                        Power of four! Control four spears, each with its own power. Explore an ancient temple and
+                        discover powerful combinations of spears' effects!<br>
+                        A small game created in 48 hours by a team of five (3 programmers and 2 artists). I participated
+                        in the design process, created most of the gameplay class structure, and implemented most of the
+                        base systems (e.g., managers, tiles, movement).
+                    </p>
+                    <div class="project-wrapper__text-btns">
+                        <a
+                                class="cta-btn cta-btn--hero cta-btn--projects"
+                                href="https://kubarek1122.itch.io/speeeer"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >Itch.io Page</a>
+                    </div>
+                </div>
+
+                <div class="project-wrapper__image">
+                    <div class="thumbnail rounded">
+                        <img
+                                alt="Project Image"
+                                class="img-fluid"
+                                height="767"
+                                src="./assets/screens/speeeer.jpg"
+                                width="1366"
+                        />
+                    </div>
+                </div>
+            </article>
+            <!-- /END Project -->
+
+            <!-- Each .row is a project -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">Space Invaders</h3>
+                    <p class="project-wrapper__text-info">
+                        07.2022<br>
+                        Small Space Invaders clone made in Unity. Created solo in one week as a recruitment task. The
+                        main features are:</p>
+                    <ul>
+                        <li>State machine-based game flow management</li>
+                        <li>Object pooling for enemies and projectiles</li>
+                        <li>Event driven UI</li>
+                        <li>Customizable enemies through scriptable objects</li>
+                    </ul>
+                    <div class="project-wrapper__text-btns">
+                        <a
+                                class="cta-btn cta-btn--hero cta-btn--projects"
+                                href="https://github.com/kubarek1122/Space-Invaders"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-wrapper__image">
+                    <div class="thumbnail rounded">
+                        <img
+                                alt="Project Image"
+                                class="img-fluid"
+                                height="767"
+                                src="./assets/screens/space_invaders.png"
+                                width="1366"
+                        />
+                    </div>
+                </div>
+            </article>
+            <!-- /END Project -->
+
+            <!-- Each .row is a project -->
+            <article class="row">
+                <div class="project-wrapper__text">
+                    <h3 class="project-wrapper__text-title">Camera Defuser</h3>
+                    <p class="project-wrapper__text-info">
+                        01.2022<br>
+                        In Camera Defuser, you play as a camera drone following his robot body. Help a small robot
+                        defuse a bomb by avoiding obstacles and interacting with levels by controlling the camera.
+                        Developed by a team of two (a programmer and designer) as a proof of concept for the
+                        Fundamentals of Computer Games subject at the university. Created in Unity. As a programmer, I
+                        implemented all the gameplay mechanics (movement, proximity indicators, unique mechanic: what is
+                        usually used as a camera to show what is on the screen plays a huge role and is a physical
+                        object in the game world).
+                    </p>
+                    <div class="project-wrapper__text-btns">
+                        <a
+                                class="cta-btn cta-btn--hero cta-btn--projects"
+                                href="https://github.com/kubarek1122/CameraDefuser"
+                                rel="noopener noreferrer"
+                                target="_blank"
+                        >Source Code</a>
+                    </div>
+                </div>
+
+                <div class="project-wrapper__image">
+                    <div class="thumbnail rounded">
+                        <img
+                                alt="Project Image"
+                                class="img-fluid"
+                                height="767"
+                                src="./assets/screens/camera_defuser.png"
+                                width="1366"
+                        />
+                    </div>
+                </div>
+            </article>
+            <!-- /END Project -->
+
         </div>
     </div>
 </section>
@@ -252,8 +430,8 @@
     <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper">
-            <p class="contact-wrapper__text">[Put your call to action here]</p>
-            <a class="cta-btn cta-btn--resume" href="#">Call to Action</a>
+            <p class="contact-wrapper__text">Let's get in touch!</p>
+            <a class="cta-btn cta-btn--resume" href="mailto:jakubberut00@gmail.com">Contact me</a>
         </div>
     </div>
 </section>
@@ -267,32 +445,8 @@
         </a>
         <div class="social-links">
             <a
-                    aria-label="twitter"
-                    href="#!"
-                    rel="noopener noreferrer"
-                    target="_blank"
-            >
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a
-                    aria-label="instagram"
-                    href="#!"
-                    rel="noopener noreferrer"
-                    target="_blank"
-            >
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a
-                    aria-label="codepen"
-                    href="#!"
-                    rel="noopener noreferrer"
-                    target="_blank"
-            >
-                <i class="fa-brands fa-codepen"></i>
-            </a>
-            <a
                     aria-label="linkedin"
-                    href="#!"
+                    href="https://www.linkedin.com/in/jakub-berut/"
                     rel="noopener noreferrer"
                     target="_blank"
             >
@@ -300,7 +454,7 @@
             </a>
             <a
                     aria-label="github"
-                    href="#!"
+                    href="https://github.com/kubarek1122"
                     rel="noopener noreferrer"
                     target="_blank"
             >

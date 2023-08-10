@@ -5,7 +5,7 @@
   align-items: center;
   background: $white-color;
   font-weight: 400;
-  color: $dark-blue-text;
+  color: $white-color;
   padding: 0rem 5.6rem;
   top: 0;
   left: 0;
@@ -82,7 +82,7 @@
 .scroll-down {
   height: 50px;
   width: 30px;
-  border: 2px solid #000000;
+  border: 2px solid $white-color;
   border-radius: 50px;
   cursor: pointer;
 
@@ -94,7 +94,7 @@
     position: absolute;
     top: 20%;
     left: 50%;
-    border: 2px solid $secondary-color;
+    border: 2px solid $white-color;
     transform: translate(-50%, -100%) rotate(45deg);
     border-top: none;
     border-left: none;
@@ -133,4 +133,49 @@
     opacity: 0;
     top: 90%;
   }
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -100;
+
+  video {
+    /* Make video to at least 100% wide and tall */
+    min-width: 100%;
+    min-height: 100%;
+
+    /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+    width: auto;
+    height: auto;
+
+    /* Center the video */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
+
+.overlay {
+  background-image: linear-gradient(to bottom right,$primary-color,$secondary-color);
+  opacity: .75;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.name {
+  color: $tertiary-color;
 }
