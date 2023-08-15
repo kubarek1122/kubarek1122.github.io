@@ -35,17 +35,21 @@ ul {
   font-size: 1.6rem;
 }
 
+ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 ul li {
   list-style: none;
   position: relative;
-  padding: 6px 0 2px 25px;
+  padding: 5px 0 5px 25px;
 }
 
 ul li::before {
   content: "-";
   position: absolute;
-  top: 6px;
-  left: 0;
+  left: 10px;
 }
 
 a {
@@ -312,8 +316,8 @@ section {
 }
 section .row {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+  grid-template-columns: 1.5fr 2fr;
   grid-template-rows: 1fr;
   padding: 0 1.5rem;
 }
@@ -339,7 +343,7 @@ section .row span {
   width: 100%;
   padding: 0 1.5rem;
   margin: 0 auto;
-  max-width: 1140px;
+  max-width: 1440px;
 }
 @media (max-width: 75em) {
   .container {
@@ -417,7 +421,7 @@ section .row span {
   height: 100%;
   justify-content: center;
   flex-direction: column;
-  text-align: left;
+  text-align: justify;
 }
 @media (max-width: 48em) {
   #about .about-wrapper__info {
@@ -666,21 +670,18 @@ section .row span {
     margin-bottom: 0rem;
   }
 }
-#projects .project-wrapper ul {
-  margin-top: -2rem;
-}
 #projects .project-wrapper .row {
   margin: 0;
-  margin-bottom: 8rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 37.5em) {
   #projects .project-wrapper .row {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
   }
 }
 #projects .project-wrapper__text {
   width: 100%;
-  text-align: left;
+  text-align: justify;
 }
 @media (max-width: 75em) {
   #projects .project-wrapper__text {
@@ -702,18 +703,16 @@ section .row span {
     font-size: 2rem;
   }
 }
-#projects .project-wrapper__text-info {
-  margin-bottom: 1.5rem;
-}
 #projects .project-wrapper__text-btns {
   width: 100%;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 2rem;
 }
 #projects .project-wrapper__image {
   width: 90%;
-  margin: 0 auto;
+  margin: 55px auto;
 }
 @media (max-width: 75em) {
   #projects .project-wrapper__image {
