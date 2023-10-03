@@ -18,7 +18,7 @@ ul {
 ul li {
   list-style: none;
   position: relative;
-  padding: 5px 0 5px 25px;
+  padding: 0px 0 5px 25px;
 }
 
 ul li::before {
@@ -58,4 +58,8 @@ a:hover {
     -webkit-text-fill-color: $white-color;
     box-shadow: none;
   }
+}
+
+.bolded {
+  font-weight: bold;
 }
