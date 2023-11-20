@@ -19,7 +19,7 @@
 
     .row {
       margin: 0;
-      margin-bottom: 2rem;
+      margin-bottom: 7rem;
       @include respond(phone) {
         margin-bottom: 1rem;
       }
@@ -60,7 +60,7 @@
 
     &__image {
       width: 90%;
-      margin: 55px auto;
+      margin: auto;
 
       @include respond(tab-land) {
         width: 100%;
